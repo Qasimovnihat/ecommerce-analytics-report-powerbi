@@ -1,145 +1,70 @@
-# E-Commerce Analytics Report
+# 📊 E-ticarət Analitik Hesabatı (End-to-End Analytics)
 
-This project presents an **end-to-end data analytics workflow** using an e-commerce dataset.  
-The goal of the project is to transform raw transactional data into **actionable business insights** through data cleaning, 
-transformation, and interactive reporting.
+![Power BI](https://img.shields.io/badge/Visualization-Power%20BI-yellow?style=flat-square&logo=power-bi)
+![SQL Server](https://img.shields.io/badge/Data%20Cleaning-SQL%20Server-red?style=flat-square&logo=microsoft-sql-server)
+![Excel](https://img.shields.io/badge/Analysis-Excel-green?style=flat-square&logo=microsoft-excel)
 
-The project demonstrates skills in **SQL, data cleaning, business analytics, and Power BI report development**.
+## 📌 Layihənin İcmalı
+Bu layihə e-ticarət məlumat dəsti üzərində qurulmuş **ucdan-uca (end-to-end) məlumat analitikası** iş axınını təqdim edir. Layihənin əsas məqsədi xam tranzaksiya məlumatlarını təmizləmə, transformasiya və interaktiv hesabat hazırlama mərhələlərindən keçirərək, onları **praktik biznes qərarlarına** çevirməkdir.
 
----
-
-## Project Overview
-
-This project analyzes an e-commerce dataset to understand:
-
-- sales performance
-- category contribution
-- discount impact
-- customer behavior
-- operational risks
-
-The workflow includes **data preparation in SQL Server** and **interactive reporting in Power BI**.
+Bu layihə SQL, məlumat təmizlənməsi, biznes analitikası və Power BI hesabatlarının hazırlanması üzrə texniki bacarıqları nümayiş etdirir.
 
 ---
 
-## Tools & Technologies
-
-- **SQL Server** – data cleaning and transformation
-- **Power BI** – interactive report design and visualization
-- **Excel** – initial dataset exploration
-- **GitHub** – project documentation and version control
-
----
-
-## Project Workflow
-
-The project was completed in the following stages:
-
-### 1. Data Cleaning (SQL Server)
-
-The raw dataset contained several issues including:
-
-- duplicate records
-- missing values
-- incorrect data formats
-- outliers
-- currency conversion
-
-Key transformations performed:
-
-- removed duplicate transactions
-- handled missing values
-- converted currency values
-- created calculated fields for sales analysis
-- generated analytical views for reporting
-
-SQL scripts used for these processes are included in the repository.
+## 🛠 Alətlər və Texnologiyalar
+* **SQL Server:** Məlumatların təmizlənməsi və transformasiyası.
+* **Power BI:** İnteraktiv hesabat dizaynı və vizuallaşdırma.
+* **Excel:** Məlumatların ilkin araşdırılması (Exploration).
+* **GitHub:** Layihənin sənədləşdirilməsi və versiya nəzarəti.
 
 ---
 
-### 2. Data Modeling
+## ⚙️ Layihənin İş Axını (Workflow)
 
-A clean analytical table was created containing fields such as:
+### 1. Məlumatların Təmizlənməsi (SQL Server)
+Xam məlumat dəstində aşkarlanan və həll edilən əsas problemlər:
+* Təkrarlanan qeydlərin (duplicates) silinməsi.
+* Boş dəyərlərin (missing values) doldurulması və ya tənzimlənməsi.
+* Yanlış məlumat formatlarının düzəldilməsi.
+* Kənar meyllərin (outliers) müəyyən edilməsi.
+* Valyuta konversiyası və hesablanmış sahələrin yaradılması.
 
-- order ID
-- category
-- payment method
-- order status
-- sales amount
-- discount amount
-- net revenue
-- order date
-
-This structured dataset enables efficient analysis and report development.
-
----
-
-## Power BI Report
-
-The final output was developed as a **3-page interactive Power BI report**.
+### 2. Məlumatların Modelləşdirilməsi
+Analiz üçün aşağıdakı sütunları ehtiva edən təmiz və strukturlaşdırılmış cədvəl yaradılmışdır:
+* Sifariş ID, Kateqoriya, Ödəniş üsulu, Sifariş statusu.
+* Satış məbləği, Endirim məbləği, Xalis gəlir (Net Revenue).
+* Sifariş tarixi və analitik baxışlar (Views).
 
 ---
 
-### 1. Executive Overview
+## 🖥 Power BI Hesabatı (3 Səhifəlik İnteraktiv Panel)
 
-This page provides a high-level summary of business performance.
+### 1. Rəhbər İcmalı (Executive Overview)
+Biznesin ümumi performansını əks etdirən yüksək səviyyəli xülasə:
+* **Əsas Metrikalar:** Ümumi Sifarişlər, Xalis Gəlir, Orta Sifariş Dəyəri (AOV).
+* **Performans:** Endirim dərəcəsi, Ləğv və Geri Qaytarma faizləri.
+* **Trendlər:** Zaman üzrə sifariş və gəlir dinamikası, ödəniş üsullarının paylanması.
 
-Key elements include:
+### 2. Kateqoriya və Məhsul Analizi
+Kateqoriya səviyyəsində performans və qiymət davranışlarına fokuslanır:
+* Xalis gəlir, Ümumi satış və Endirim məbləği.
+* Orta satış qiyməti (ASP) və tamamlanmış sifarişlərin sayı.
+* **Məqsəd:** Ən yaxşı performans göstərən kateqoriyaları və kampaniya asılılıqlarını müəyyən etmək.
 
-- Total Orders
-- Net Revenue
-- Average Order Value (AOV)
-- Discount Rate
-- Cancellation + Refund Rate
-- orders and revenue trends
-- payment method distribution
-- category-level revenue view
-
----
-
-### 2. Category & Product Analysis
-
-This page focuses on category-level performance and pricing behavior.
-
-Key elements include:
-
-- Net Revenue
-- Gross Sales
-- Total Discount
-- Average Selling Price
-- Complete Orders
-- revenue by category
-- category share
-- discount by category
-- average selling price by category
-
-This page helps identify **top-performing categories and promotional patterns**.
+### 3. Əsas Biznes Nəticələri (Key Business Insights)
+Hesabatın ən vacib tapıntılarını ümumiləşdirən analitik səhifə:
+* Ən çox gəlir gətirən kateqoriya və ödəniş üsulu.
+* Əməliyyat risk dərəcəsi və aylıq performans xülasəsi.
+* Gəlir və Endirim arasındakı korrelyasiya trendləri.
 
 ---
 
-### 3. Key Business Insights
-
-This page is designed as an insight page to summarize the most important findings from the report.
-
-Key elements include:
-
-- Top Revenue Category
-- Top Payment Method
-- Highest Discount Value
-- Operational Risk Rate
-- Monthly Performance Summary
-- Revenue vs Discount Trend
-- business-focused insight boxes
-
----
-
-## Key Insights
-
-- **Mobiles & Tablets** is the primary revenue driver.
-- **Women’s Fashion** is another major contributor to overall performance.
-- High discount levels in top-performing categories suggest a degree of promotional dependency.
-- The dominance of certain payment methods may indicate operational concentration risk.
-- Cancellation and refund levels should be monitored as part of operational quality analysis.
+## 🔍 Əsas Nəticələr (Key Insights)
+* **Mobiles & Tablets** kateqoriyası gəlirin əsas hərəkətverici qüvvəsidir.
+* **Women’s Fashion** ümumi performansda əhəmiyyətli paya malikdir.
+* Top kateqoriyalarda yüksək endirim səviyyələri biznesin **kampaniyalardan asılı olduğunu** göstərir.
+* Bəzi ödəniş üsullarının üstünlük təşkil etməsi əməliyyatların təmərküzləşmə riskinə işarə edir.
+* Ləğv və geri qaytarma səviyyələri əməliyyat keyfiyyəti baxımından mütəmadi monitorinq edilməlidir.
 
 ---
 
